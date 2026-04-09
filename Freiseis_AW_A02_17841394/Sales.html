@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Freiseis_AW_A02_17841394/cs/Main_2.css">
+    <link rel="stylesheet" href="/Freiseis_AW_A02_17841394/cs/header_nav_footer.css">
+</head>
+<body>
+        <header>
+        <h2>Sales Tax Calculator</h2>
+    </header>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="PigLatin.html">Pig Latin</a></li>
+            <li><a href="Sales.html">Sales</a></li>
+        </ul>
+    </nav>
+        <script src="js/Sales.js"></script>
+    <script>
+        "use strict";
+        alert("Subtotal must be > 0 and < 10000")
+    </script>
+<form>
+<fieldset>
+    <legend>Enter Subtotal and Tax Rate</legend>
+
+    <label for="subtotal">Subtotal:</label>
+    <input type="text" id="subtotal" required><br>
+
+    <label for="taxrate">Tax Rate:</label>
+    <input type="text" id="taxrate" required><br>
+
+    <input type="button" id="calculate" value="Calculate">
+    <input type="reset" value="Reset"><br><br>
+
+    <label for="salestax">Sales Tax:</label>
+    <input type="text" id="salestax" readonly><br>
+
+    <label for="total">Total:</label>
+    <input type="text" id="total" readonly>
+</fieldset>
+</form>
+</body>
+</html>

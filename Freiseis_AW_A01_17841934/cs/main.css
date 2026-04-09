@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, Geneva, Helvetica, sans-serif;
+    max-width: 1024px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid red;
+}
+
+h1 {
+    font-size: 160%;
+}
+h2 {
+    font-size: 130%;
+}
+h3 {
+    font-size: 110%;
+    border-image-width: 10%;
+    color: maroon;
+
+}
+header h3{
+    font-size: 110%;
+    border-image-width: 10%;
+    color: black
+}
+button{
+    border-color: black;
+    color: red;
+    text-decoration-color: aliceblue;
+    size: 50;
+}
+main{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 3fr;
+    gap: 1em;
+    clear: both;
+}
+section a:link, section a:visited {
+    color:maroon;
+}
+section a:focus, section a:hover {
+    color: red;
+}
+section {
+    flex: auto;
+    float: none;
+}
+section {
+order: 2;
+padding: 20px;
+
+}
+
+header img {
+    float: left;
+    width: 15.5555%;
+    max-width: 140px;
+    min-width: 70px;
+}
+
+img{
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+aside {
+  width: 100%;
+  padding: 20px 0;
+  float: left;
+}
+ aside {
+order: 1;
+  padding: 20px;
+}
+aside h2 {
+    width: 100%;
+    font-size: 130%;
+    padding-bottom: .5em;
+    color: black;
+}
+aside a {
+    flex: content;
+    font-size: 100%;
+    line-height: 1.6;
+    color: steelblue;
+    padding-bottom: .5em;
+}
+aside a:focus, section a:hover {
+    color: steelblue;
+}
+aside a:link, a:visited {
+    color: maroon;
+}
+
+aside ul{
+    line-height: 1.6;
+}
+
+aside li {
+    line-height: 1.6;
+}
+
+@media only screen and (max-width: 900px)
+{
+  body {
+    box-shadow: none;
+    }
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+
+
+}
+@media only screen and (max-width: 769px)
+{
+main{
+    grid-template-columns: 1fr;
+}
+  aside {
+    order: 2;
+  }
+  section{
+    order: 1;
+  }
+}
+@media only screen and (max-width: 479px)
+{
+    textarea {
+        width: 100%;
+        font-size: 1em; 
+    }
+
+}
